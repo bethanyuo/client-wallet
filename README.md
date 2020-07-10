@@ -13,6 +13,9 @@ The wallet will be stored in the local storage of the browser in an encrypted JS
 * jQuery
 * jquery.qrcode
 
+## Network
+Ropsten Testnet
+
 ## Setup the Project
 Download the Skeleton zip file from today's topic and extract it. Open the project. Open the HTML in the browser. Get to know the code.
 You will see that the HTML, CSS and dependency libraries are done and downloaded, only the JavaScript file with the interesting methods are left with TODOs. Now it is time to implement the TODO methods.
