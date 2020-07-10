@@ -62,8 +62,7 @@ Go to [View Addresses], type password and click [Show Addresses]. Due to asynchr
 Here we will implement the [Send Transaction] section. We will create the functionality to sign and send transactions on the Ropsten Ethereum Network. After a provided password we will decrypt the json in the local storage, derive first 5 private keys and load the in the memory of the program. After that, a form will appear with the sender address, from address and value to send. The sender address will be chosen from a dropdown of the five derived. First, we will sign the transaction and then broadcast it to the network.
 Go to `unlockWalletAndDeriveAddresses` method in wallet.js. This method will decrypt the local storage json, load 5 “mini” wallets in the memory of the program and fill the UI. Decrypt the wallet and with the callback result derive the “mini” wallets, save them in wallets object variable, and append each of the addresses to the select element as an option. Then show the div with the form.
  
-The `renderAddresses` function can again be implemented inside `unlockWalletAndDeriveAddresses`.
- 
+The `renderAddresses` method can again be implemented inside `unlockWalletAndDeriveAddresses`.
  
 Now implement `signTransaction` method. It will take one of the addresses from the dropdown, recipient address, value of ETH and sign it. Take the sender wallet, build a transaction, and sign it and append to the textarea the signature.
  
